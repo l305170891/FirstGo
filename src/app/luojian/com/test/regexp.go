@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"regexp"
 	"log"
+	"regexp"
 )
 
 func main() {
 	match, err := regexp.MatchString("p([a-z]+)ch", "peach")
 
-	if err != nil{
+	if err != nil {
 		log.Fatal("match err.")
 	}
 
